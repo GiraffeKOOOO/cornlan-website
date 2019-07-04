@@ -1,3 +1,4 @@
+/*  [All pages] HEADER  */
 #header{
   background-color: black;
   opacity: 0.8;
@@ -6,6 +7,8 @@
 #header a {
   color: orange;
 }
+
+/*  [Home page] JUMBOTRON + A tags  */
 
 #nextEventJumbo{
   background-image: url("./images/banner1.png");
@@ -45,7 +48,7 @@
 
 a {
   all: unset;
-  color: orange !important;
+  color: #ffa500 !important;
 }
 
 a:hover {
@@ -58,4 +61,27 @@ a:hover {
     -moz-transition: ease-in 0.2s;
     -o-transition: ease-in 0.2s;
     transition: ease-in 0.2s;
+}
+
+/*  [Home page] About */
+
+.infoButton{
+  background-color: rgba(0,0,0,0.6);
+}
+
+#aboutText p{
+  font-size: 20px;
+}
+
+#aboutText li{
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.socialIcons{
+  width: 100px;
+  height: 100px;
+  margin: 2%;
+  background-color: rgba(0,0,0,0);
+  color: rgba(0,0,0,0);
 }

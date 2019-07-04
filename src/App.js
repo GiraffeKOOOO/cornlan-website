@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import { Layout, Header, Navigation, Content} from 'react-mdl';
+import { Layout, Header, Navigation, Content, FooterSection, FooterLinkList, Footer} from 'react-mdl';
 import { Link } from 'react-router-dom';
 import Main from './pages/main';
 import cornlanLogo from './images/logo.png';
+import smallLogo from './images/logo_small.png';
 
 
 
@@ -26,7 +27,26 @@ function App() {
             <div className="page-content" />
             <Main/>
         </Content>
+        <Footer size="mini">
+            <FooterSection type="left" logo={<img src={smallLogo} alt="small-logo" style={{width: '50px', height: '30px'}}/>}>
+                <FooterLinkList>
+                    <a> ©CornLAN</a>
+                    <a href="#">Help</a>
+                    <a href="#">Privacy & Terms</a>
+                </FooterLinkList>
+            </FooterSection>
+            <FooterSection type="center">
+                <FooterLinkList>
+                    <a> Find us on: </a>
+                    <a href="https://www.facebook.com/cornlanuk/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.youtube.com/channel/UCNVqt3O4_fEUFGf9hARty9Q" target="_blank" rel="noopener noreferrer">Youtube</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://discord.gg/JywShWe" target="_blank" rel="noopener noreferrer">Discord</a>
+                </FooterLinkList>
+            </FooterSection>
+        </Footer>
     </Layout>
+    
 </div>
   );
 }
