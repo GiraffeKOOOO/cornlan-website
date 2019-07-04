@@ -1,6 +1,6 @@
 # CornLAN
 #### website for Cornish LAN party : https://cornlan.co.uk 
-![cornlan-logo](https://https://imgur.com/a/ZwuGOcH)
+![cornlan-logo](https://i.imgur.com/OMdSZ7m.png)
 
 ### The aim  :dart: :
 to create a more structured website for cornlan .... maybe people will use it then 
