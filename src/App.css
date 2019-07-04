@@ -1,12 +1,61 @@
 #header{
-  background-image: linear-gradient(to right top, #0056d8, #0073dc, #0086cc, #0093b4, #009d9d);
+  background-color: black;
+  opacity: 0.8;
 }
 
-.grid1{
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
+#header a {
+  color: orange;
 }
-.logo{
-  height: 50%;
+
+#nextEventJumbo{
+  background-image: url("./images/banner1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.86;
+}
+
+#infoText{
+  background: rgba(0,0,0,0.6);
+  width: 40%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px rgb(255, 165, 0) solid;
+  margin-left: 55%;
+}
+
+#welcomeTitle{
+  color: orange;
+  -webkit-text-stroke: 2px black;
+  font-size: 70px;
+  background-color: rgba(255, 165, 0, 0.5);
+  border-radius: 4px;
+  
+}
+
+.infoText{
+  color: orange;
+  -webkit-text-stroke: 2px black;
+}
+
+#signupButton:hover {
+  color: black !important;
+}
+
+a {
+  all: unset;
+  color: orange !important;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: rgba(255, 165, 0, 0.7);
+  border-radius: 4px;
+  cursor: pointer;
+
+  -webkit-transition: ease-in 0.2s; /* property duration timing-function delay */
+    -moz-transition: ease-in 0.2s;
+    -o-transition: ease-in 0.2s;
+    transition: ease-in 0.2s;
 }

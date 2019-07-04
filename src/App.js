@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="demo-big-content">
     <Layout>
-        <Header id="header" title={<span><Link to="/"><img src={cornlanLogo} width="350px" height="100px"/></Link></span>} scroll>
+        <Header id="header" title={<span><Link to="/"><img src={cornlanLogo} alt="cornlan logo" width="200px" height="60px"/></Link></span>} scroll>
             <Navigation>
                 <Link to="/">Home</Link>
                 <Link to="/nextEvents">Next Events</Link>

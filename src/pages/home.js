@@ -1,21 +1,20 @@
 import React from 'react';
 import { Component } from 'react';
-import { Grid, Cell} from 'react-mdl';
-import Logo from '../images/logo.png';
+import { Jumbotron, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
     render() {
         return(
             <div style={{width: '100%', margin: 'auto'}}>
-                <div style={{width: '80%', margin: 'auto'}}>
-                    <Grid className="grid-1">
-                        <Cell col={1}><img
-                        src={Logo}
-                        alt="cornlan logo"
-                        className="logo"
-                        /></Cell>
-                    </Grid>
-                </div>
+                <Jumbotron id="nextEventJumbo">
+                    <div id="infoText">
+                    <h1 id="welcomeTitle" >Welcome to CornLAN</h1>
+                    <h1 className="infoText"> Next event is <a href="nextEvents"> SickLAN 9</a></h1>
+                    <h3 className="infoText">Date: 25th June 2019 -> 28th June 2019</h3>
+                    <Button variant="outline-warning" id="signupButton" href="nextEvents">BOOK NOW</Button>
+                    </div>
+                </Jumbotron>
             </div>
         )
     }
