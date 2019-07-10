@@ -50,7 +50,7 @@ class Home extends Component {
                             The LAN parties we host are typically 3 days long, starting on a Friday afternoon and ending on Monday afternoon.
                             </p></Cell>
                                 <Cell col={12}>
-                                    <h2>Find us over at:</h2>
+                                    <h2>Find us over on:</h2>
                                     <a href="https://www.facebook.com/cornlanuk/" target="_blank" rel="noopener noreferrer"><img
                                     src={fbIcon}
                                     alt="facebook-icon"
@@ -86,7 +86,7 @@ class Home extends Component {
                 </div>
                 <div id="previousEventsText" style={{width: '80%', margin: 'auto'}}>
                     <Grid>
-                            <Cell col={6}>
+                            <Cell col={12}>
                                 <h3>
                                 Here are some photos from previous events:
                                 </h3>
