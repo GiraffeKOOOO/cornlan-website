@@ -1,5 +1,5 @@
 /*  [All pages] HEADER  */
-#header{
+#header {
   background-color: black;
   opacity: 0.8;
 }
@@ -10,7 +10,7 @@
 
 /*  [Home page] JUMBOTRON + A tags  */
 
-#nextEventJumbo{
+#nextEventJumbo {
   background-image: url("./images/banner1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -18,8 +18,8 @@
   opacity: 0.86;
 }
 
-#infoText{
-  background: rgba(0,0,0,0.6);
+#infoText {
+  background: rgba(0, 0, 0, 0.6);
   width: 40%;
   padding: 10px;
   border-radius: 5px;
@@ -28,16 +28,15 @@
   margin-left: 55%;
 }
 
-#welcomeTitle{
+#welcomeTitle {
   color: orange;
   -webkit-text-stroke: 2px black;
   font-size: 70px;
   background-color: rgba(255, 165, 0, 0.5);
   border-radius: 4px;
-  
 }
 
-.infoText{
+.infoText {
   color: orange;
   -webkit-text-stroke: 2px black;
 }
@@ -58,30 +57,36 @@ a:hover {
   cursor: pointer;
 
   -webkit-transition: ease-in 0.2s; /* property duration timing-function delay */
-    -moz-transition: ease-in 0.2s;
-    -o-transition: ease-in 0.2s;
-    transition: ease-in 0.2s;
+  -moz-transition: ease-in 0.2s;
+  -o-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+
+#nextEventTitle {
+  background-color: rgba(255, 165, 0, 0.7);
+  border-radius: 4px;
+  padding: 2px;
 }
 
 /*  [Home page] About */
 
-.infoButton{
-  background-color: rgba(0,0,0,0.6);
+.infoButton {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-#aboutText p{
+#aboutText p {
   font-size: 20px;
 }
 
-#aboutText li{
+#aboutText li {
   font-size: 20px;
   padding-bottom: 10px;
 }
 
-.socialIcons{
+.socialIcons {
   width: 100px;
   height: 100px;
   margin: 2%;
-  background-color: rgba(0,0,0,0);
-  color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
 }
