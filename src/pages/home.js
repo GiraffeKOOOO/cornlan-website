@@ -8,6 +8,7 @@ import clockIcon from "../images/icons/clock.png";
 import discordIcon from "../images/icons/discord.png";
 import fbIcon from "../images/icons/fb.png";
 import ytIcon from "../images/icons/yt.png";
+import homeGallery from "../components/homeGallery";
 
 class Home extends Component {
   render() {
@@ -18,7 +19,7 @@ class Home extends Component {
           <div id="infoText">
             <h1 id="welcomeTitle">Welcome to CornLAN</h1>
             <h2 className="infoText">
-              Next event is{" "}
+              Next event is
               <a href="nextEvents" id="nextEventTitle">
                 SickLAN 9
               </a>
@@ -31,16 +32,17 @@ class Home extends Component {
                   width: "40px",
                   height: "40px",
                   backgroundColor: "rgba(255, 165, 0, 0.7)",
-                  padding: "1px"
+                  padding: "1px",
+                  marginRight: "5px"
                 }}
               />
-              25th June - 28th June 2019
+              25th June ➤ 28th June 2019
             </h3>
             <h3 className="infoText">
               <img
                 src={clockIcon}
                 alt="clock icon"
-                style={{ width: "40px", height: "40px" }}
+                style={{ width: "40px", height: "40px", marginRight: "5px" }}
               />
               Countdown: 49 days left!
             </h3>
@@ -172,7 +174,7 @@ class Home extends Component {
           <Grid>
             <Cell col={12}>
               <h3>Here are some photos from previous events:</h3>
-              <p>photos</p>
+              <homeGallery />
             </Cell>
             <Cell col={6} />
           </Grid>
