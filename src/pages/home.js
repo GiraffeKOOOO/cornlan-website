@@ -8,7 +8,7 @@ import clockIcon from "../images/icons/clock.png";
 import discordIcon from "../images/icons/discord.png";
 import fbIcon from "../images/icons/fb.png";
 import ytIcon from "../images/icons/yt.png";
-import homeGallery from "../components/homeGallery";
+import homeGallery from "homeGallery";
 
 class Home extends Component {
   render() {
