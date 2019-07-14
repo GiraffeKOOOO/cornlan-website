@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from "react";
-import { Jumbotron, Button, Modal } from "react-bootstrap";
+import { Jumbotron, Button } from "react-bootstrap";
 import { Grid, Cell } from "react-mdl";
 import smallLogo from "../images/logo_small.png";
 import calendarIcon from "../images/icons/calendar.png";
@@ -17,7 +17,6 @@ const images = [{ src: b1 }, { src: b2 }];
 
 class Home extends Component {
   render() {
-    let modalClose = () => this.setState({ modalShow: false });
     return (
       <div style={{ width: "100%", margin: "auto" }}>
         <Jumbotron id="nextEventJumbo">
