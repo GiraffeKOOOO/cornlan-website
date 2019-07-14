@@ -1,7 +1,11 @@
+// library imports
 import React from "react";
 import { Component } from "react";
 import { Jumbotron, Button } from "react-bootstrap";
 import { Grid, Cell } from "react-mdl";
+import Gallery from "react-grid-gallery";
+
+// images import
 import smallLogo from "../images/logo_small.png";
 import calendarIcon from "../images/icons/calendar.png";
 import clockIcon from "../images/icons/clock.png";
@@ -10,10 +14,28 @@ import fbIcon from "../images/icons/fb.png";
 import ytIcon from "../images/icons/yt.png";
 import b1 from "../images/galleryThumbnails/b1.jpg";
 import b2 from "../images/galleryThumbnails/b2.jpg";
-import homeGallery from "../components/homeGallery";
+import s1 from "../images/galleryThumbnails/s1.jpg";
 
-import Carousel from "react-images";
-const images = [{ src: b1 }, { src: b2 }];
+const IMAGES = [
+  {
+    src: b1,
+    thumbnail: b1,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174
+  },
+  {
+    src: b2,
+    thumbnail: b2,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174
+  },
+  {
+    src: s1,
+    thumbnail: s1,
+    thumbnailWidth: 320,
+    thumbnailHeight: 174
+  }
+];
 
 class Home extends Component {
   render() {
@@ -178,7 +200,7 @@ class Home extends Component {
           <Grid>
             <Cell col={12}>
               <h3>Here are some photos from previous events:</h3>
-              <Carousel views={images} />
+              <Gallery images={IMAGES} />,
             </Cell>
             <Cell col={6} />
           </Grid>
