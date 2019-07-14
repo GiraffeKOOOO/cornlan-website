@@ -12,8 +12,7 @@ import b1 from "../images/galleryThumbnails/b1.jpg";
 import b2 from "../images/galleryThumbnails/b2.jpg";
 import homeGallery from "../components/homeGallery";
 
-
-import Carousel from 'react-images';
+import Carousel from "react-images";
 const images = [{ src: b1 }, { src: b2 }];
 
 class Home extends Component {
