@@ -8,7 +8,13 @@ import clockIcon from "../images/icons/clock.png";
 import discordIcon from "../images/icons/discord.png";
 import fbIcon from "../images/icons/fb.png";
 import ytIcon from "../images/icons/yt.png";
-import homeGallery from "homeGallery";
+import b1 from "../images/galleryThumbnails/b1.jpg";
+import b2 from "../images/galleryThumbnails/b2.jpg";
+import homeGallery from "../components/homeGallery";
+
+
+import Carousel from 'react-images';
+const images = [{ src: b1 }, { src: b2 }];
 
 class Home extends Component {
   render() {
@@ -174,7 +180,7 @@ class Home extends Component {
           <Grid>
             <Cell col={12}>
               <h3>Here are some photos from previous events:</h3>
-              <homeGallery />
+              <Carousel views={images} />
             </Cell>
             <Cell col={6} />
           </Grid>
