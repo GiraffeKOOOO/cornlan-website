@@ -200,7 +200,7 @@ class Home extends Component {
           <Grid>
             <Cell col={12}>
               <h3>Here are some photos from previous events:</h3>
-              <Gallery images={IMAGES} />,
+              <Gallery images={IMAGES} id="homeGallery" />,
             </Cell>
             <Cell col={6} />
           </Grid>
