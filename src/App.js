@@ -60,15 +60,15 @@ function App() {
             }
           >
             <FooterLinkList>
-              <a href="#"> ©CornLAN</a>
-              <a href="#">Help</a>
-              <a href="#">Privacy & Terms</a>
-              <a href="#">Cookies</a>
+              <a href="/"> ©CornLAN</a>
+              <a href="help">Help</a>
+              <a href="privacy">Privacy & Terms</a>
+              <a href="cookies">Cookies</a>
             </FooterLinkList>
           </FooterSection>
           <FooterSection type="center">
             <FooterLinkList>
-              <a> Find us on: </a>
+              <a href="/"> Find us on: </a>
               <a
                 href="https://www.facebook.com/cornlanuk/"
                 target="_blank"
@@ -83,9 +83,12 @@ function App() {
               >
                 Youtube
               </a>
+              {/* 
+              a tag for instagram when I make one
               <a href="#" target="_blank" rel="noopener noreferrer">
                 Instagram
               </a>
+              */}
               <a
                 href="https://discord.gg/JywShWe"
                 target="_blank"
