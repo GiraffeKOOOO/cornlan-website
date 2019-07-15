@@ -22,7 +22,7 @@ function App() {
           id="header"
           title={
             <span>
-              <Link to="/">
+              <Link to="/" id="logo">
                 <img
                   src={cornlanLogo}
                   alt="cornlan logo"

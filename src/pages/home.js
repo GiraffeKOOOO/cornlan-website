@@ -1,7 +1,7 @@
 // library imports
 import React from "react";
 import { Component } from "react";
-import { Jumbotron, Button } from "react-bootstrap";
+import { Jumbotron, Button, Modal } from "react-bootstrap";
 import { Grid, Cell } from "react-mdl";
 import Gallery from "react-grid-gallery";
 
@@ -37,8 +37,89 @@ const IMAGES = [
   }
 ];
 
-class Home extends Component {
+class TicketInfoModal extends React.Component {
   render() {
+    return (
+      <Modal
+        {...this.props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Ticket Information
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Centered Modal</h4>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+            ac consectetur ac, vestibulum at eros.
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button
+            onClick={this.props.onHide}
+            variant="outline-warning"
+            className="infoButton"
+            style={{ marginLeft: "10px" }}
+          >
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+}
+
+class ChecklistModal extends React.Component {
+  render() {
+    return (
+      <Modal
+        {...this.props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="contained-modal-title-vcenter">
+            Small Checklist
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <h4>Centered Modal</h4>
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
+            ac consectetur ac, vestibulum at eros.
+          </p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button
+            onClick={this.props.onHide}
+            variant="outline-warning"
+            className="infoButton"
+            style={{ marginLeft: "10px" }}
+          >
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+}
+
+class Home extends Component {
+  constructor(...args) {
+    super(...args);
+
+    this.state = { TicketInfoModal: false, ChecklistModal: false };
+  }
+  render() {
+    let modalClose = () =>
+      this.setState({ TicketInfoModal: false, ChecklistModal: false });
     return (
       <div style={{ width: "100%", margin: "auto" }}>
         <Jumbotron id="nextEventJumbo">
@@ -173,9 +254,19 @@ class Home extends Component {
                     variant="outline-warning"
                     className="infoButton"
                     style={{ marginLeft: "10px" }}
+                    onClick={() =>
+                      this.setState({
+                        TicketInfoModal: true,
+                        ChecklistModal: false
+                      })
+                    }
                   >
                     Ticket info
                   </Button>
+                  <TicketInfoModal
+                    show={this.state.TicketInfoModal}
+                    onHide={modalClose}
+                  />
                 </li>
                 <li>Duration: 3 Days</li>
                 <li>
@@ -184,9 +275,19 @@ class Home extends Component {
                     variant="outline-warning"
                     className="infoButton"
                     style={{ marginLeft: "10px" }}
+                    onClick={() =>
+                      this.setState({
+                        TicketInfoModal: false,
+                        ChecklistModal: true
+                      })
+                    }
                   >
                     Small Checklist
                   </Button>
+                  <ChecklistModal
+                    show={this.state.ChecklistModal}
+                    onHide={modalClose}
+                  />
                 </li>
               </ul>
               <p>
