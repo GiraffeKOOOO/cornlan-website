@@ -1,7 +1,7 @@
 // library imports
 import React from "react";
 import { Component } from "react";
-import { Jumbotron, Button, Modal } from "react-bootstrap";
+import { Jumbotron, Button, Modal, Container, Row, Col } from "react-bootstrap";
 import { Grid, Cell } from "react-mdl";
 import Gallery from "react-grid-gallery";
 
@@ -42,22 +42,35 @@ class TicketInfoModal extends React.Component {
     return (
       <Modal
         {...this.props}
-        size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
+        dialogClassName="ticketModal"
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Ticket Information
+            <h3>Ticket Prices</h3>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros.
-          </p>
+          <Container>
+            <Row className="show-grid">
+              <Col md={4}>
+                <h4>Regular Ticket</h4>
+              </Col>
+              <Col md={4}>
+                <h4>Student Ticket</h4>
+              </Col>
+              <Col md={4}>
+                <h4>Duo Ticket</h4>
+              </Col>
+              <Col md={4}>
+                <h4>Group Ticket</h4>
+              </Col>
+              <Col md={4}>
+                <h4>Spectator Ticket</h4>
+              </Col>
+            </Row>
+          </Container>
         </Modal.Body>
         <Modal.Footer>
           <Button
