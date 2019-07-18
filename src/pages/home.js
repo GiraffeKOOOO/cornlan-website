@@ -42,9 +42,9 @@ class TicketInfoModal extends React.Component {
     return (
       <Modal
         {...this.props}
+        size="xl"
         aria-labelledby="contained-modal-title-vcenter"
         centered
-        dialogClassName="ticketModal"
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
@@ -54,20 +54,20 @@ class TicketInfoModal extends React.Component {
         <Modal.Body>
           <Container>
             <Row className="show-grid">
-              <Col md={4}>
-                <h4>Regular Ticket</h4>
+              <Col md={2}>
+                <h4>Regular</h4>
               </Col>
-              <Col md={4}>
-                <h4>Student Ticket</h4>
+              <Col md={2}>
+                <h4>Student</h4>
               </Col>
-              <Col md={4}>
-                <h4>Duo Ticket</h4>
+              <Col md={2}>
+                <h4>Duo</h4>
               </Col>
-              <Col md={4}>
-                <h4>Group Ticket</h4>
+              <Col md={2}>
+                <h4>Group</h4>
               </Col>
-              <Col md={4}>
-                <h4>Spectator Ticket</h4>
+              <Col md={2}>
+                <h4>Spectator</h4>
               </Col>
             </Row>
           </Container>
