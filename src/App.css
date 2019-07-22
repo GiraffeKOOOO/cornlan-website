@@ -131,3 +131,17 @@ a:hover {
 .ticketModal {
   width: 90%;
 }
+
+/*  -- ticket modal information --  */
+
+#ticketTable td {
+  border: solid 1px black;
+  width: 200px;
+  text-align: center;
+  vertical-align: top;
+}
+
+#ticketTable button {
+  display: block;
+  margin: auto;
+}

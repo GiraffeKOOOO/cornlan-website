@@ -1,7 +1,7 @@
 // library imports
 import React from "react";
 import { Component } from "react";
-import { Jumbotron, Button, Modal, Container, Row, Col } from "react-bootstrap";
+import { Jumbotron, Button, Modal } from "react-bootstrap";
 import { Grid, Cell } from "react-mdl";
 import Gallery from "react-grid-gallery";
 
@@ -15,6 +15,11 @@ import ytIcon from "../images/icons/yt.png";
 import b1 from "../images/galleryThumbnails/b1.jpg";
 import b2 from "../images/galleryThumbnails/b2.jpg";
 import s1 from "../images/galleryThumbnails/s1.jpg";
+import regularTicketImage from "../images/icons/regular.png";
+import studentTicketImage from "../images/icons/student.png";
+import duoTicketImage from "../images/icons/duo.png";
+import groupTicketImage from "../images/icons/group.png";
+import spectatorTicketImage from "../images/icons/spectator.png";
 
 const IMAGES = [
   {
@@ -52,25 +57,177 @@ class TicketInfoModal extends React.Component {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Container>
-            <Row className="show-grid">
-              <Col md={2}>
-                <h4>Regular</h4>
-              </Col>
-              <Col md={2}>
-                <h4>Student</h4>
-              </Col>
-              <Col md={2}>
-                <h4>Duo</h4>
-              </Col>
-              <Col md={2}>
-                <h4>Group</h4>
-              </Col>
-              <Col md={2}>
-                <h4>Spectator</h4>
-              </Col>
-            </Row>
-          </Container>
+          <table id="ticketTable">
+            <tr id="ticketTypeRow">
+              <td>
+                <h3>Type:</h3>
+              </td>
+              <td>
+                <h3>Regular</h3>
+              </td>
+              <td>
+                <h3>Student</h3>
+              </td>
+              <td>
+                <h3>Duo</h3>
+              </td>
+              <td>
+                <h3>Group</h3>
+              </td>
+              <td>
+                <h3>Spectator</h3>
+              </td>
+            </tr>
+            <tr id="ticketImages">
+              <td />
+              <td>
+                <img
+                  src={regularTicketImage}
+                  alt="regular ticket"
+                  style={{ width: "125px", height: "125px" }}
+                />
+              </td>
+              <td>
+                <img
+                  src={studentTicketImage}
+                  alt="student ticket"
+                  style={{ width: "125px", height: "125px" }}
+                />
+              </td>
+              <td>
+                <img
+                  src={duoTicketImage}
+                  alt="duo ticket"
+                  style={{ width: "125px", height: "125px" }}
+                />
+              </td>
+              <td>
+                <img
+                  src={groupTicketImage}
+                  alt="group ticket"
+                  style={{ width: "125px", height: "125px" }}
+                />
+              </td>
+              <td>
+                <img
+                  src={spectatorTicketImage}
+                  alt="spectator ticket"
+                  style={{ width: "125px", height: "125px" }}
+                />
+              </td>
+            </tr>
+            <tr id="ticketPrice">
+              <td>
+                <h4>Price:</h4>
+              </td>
+              <td>
+                <h3>£22</h3>
+              </td>
+              <td>
+                <h3>£15</h3>
+              </td>
+              <td>
+                <tr>
+                  <h3>£24</h3>
+                </tr>
+                <tr>
+                  <h6>£12 each (2 minimum)</h6>
+                </tr>
+              </td>
+              <td>
+                <tr>
+                  <h3>£33+</h3>
+                </tr>
+                <tr>
+                  <h6>£11 each (3 minimum)</h6>
+                </tr>
+              </td>
+              <td>
+                <h3>£10</h3>
+              </td>
+            </tr>
+            <tr id="ticketInfo">
+              <td>
+                <h4>What do I get?</h4>
+              </td>
+              <td>
+                <tr>
+                  <td>1 BYOD ticket</td>
+                </tr>
+                <tr>
+                  <td>
+                    You can bring your computer or console and a monitor or tv
+                  </td>
+                </tr>
+                <br />
+              </td>
+              <td>
+                <tr>
+                  <td>1 BYOD ticket</td>
+                </tr>
+                <tr>
+                  <td>
+                    Being a student is hard, so heres a cheaper ticket to make
+                    it a bit easier
+                  </td>
+                </tr>
+              </td>
+              <td>
+                <tr>
+                  <td>2 BYOD tickets</td>
+                </tr>
+                <tr>
+                  <td>
+                    If you have a friend that you want to bring along for the
+                    weekend, get this ticket for the both of you and save loads
+                    of money!
+                  </td>
+                </tr>
+              </td>
+              <td>
+                <tr>
+                  <td>3 or more BYOD tickets</td>
+                </tr>
+                <tr>
+                  <td>
+                    If you have more than 1 or 2 friends that you want to bring
+                    down for the weekend, get this group ticket for your bunch
+                    and save loads of money!
+                  </td>
+                </tr>
+              </td>
+              <td>
+                <tr>
+                  <td>1 Spectator ticket</td>
+                </tr>
+                <tr>
+                  <td>
+                    This is a ticket for if you don't fancy bringing your entire
+                    pc tower but you still want to come down and watch some
+                    movies on the projector or play some board games.
+                  </td>
+                </tr>
+              </td>
+            </tr>
+            <tr id="buyTicket">
+              <td />
+              <td>
+                <button>Buy Regular</button>
+              </td>
+              <td>
+                <button>Buy Student</button>
+              </td>
+              <td>
+                <button>Buy Duo</button>
+              </td>
+              <td>
+                <button>Buy Group</button>
+              </td>
+              <td>
+                <button>Buy Spectator</button>
+              </td>
+            </tr>
+          </table>
         </Modal.Body>
         <Modal.Footer>
           <Button
