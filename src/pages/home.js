@@ -59,10 +59,10 @@ class TicketInfoModal extends React.Component {
         <Modal.Body>
           <table id="ticketTable">
             <tr id="ticketTypeRow">
-              <td>
+              <td id="topLeft">
                 <h3>Type:</h3>
               </td>
-              <td>
+              <td className="colRegular">
                 <h3>Regular</h3>
               </td>
               <td>
@@ -74,13 +74,13 @@ class TicketInfoModal extends React.Component {
               <td>
                 <h3>Group</h3>
               </td>
-              <td>
+              <td id="topRight">
                 <h3>Spectator</h3>
               </td>
             </tr>
             <tr id="ticketImages">
               <td />
-              <td>
+              <td className="colRegular">
                 <img
                   src={regularTicketImage}
                   alt="regular ticket"
@@ -120,7 +120,7 @@ class TicketInfoModal extends React.Component {
               <td>
                 <h4>Price:</h4>
               </td>
-              <td>
+              <td className="colRegular">
                 <h3>£22</h3>
               </td>
               <td>
@@ -147,14 +147,14 @@ class TicketInfoModal extends React.Component {
               </td>
             </tr>
             <tr id="ticketInfo">
-              <td>
+              <td id="bottomLeft">
                 <h4>What do I get?</h4>
               </td>
-              <td>
-                <tr>
+              <td className="colRegular">
+                <tr className="ticketInfoTitle">
                   <td>1 BYOD ticket</td>
                 </tr>
-                <tr>
+                <tr className="ticketInfoText">
                   <td>
                     You can bring your computer or console and a monitor or tv
                   </td>
@@ -162,10 +162,10 @@ class TicketInfoModal extends React.Component {
                 <br />
               </td>
               <td>
-                <tr>
+                <tr className="ticketInfoTitle">
                   <td>1 BYOD ticket</td>
                 </tr>
-                <tr>
+                <tr className="ticketInfoText">
                   <td>
                     Being a student is hard, so heres a cheaper ticket to make
                     it a bit easier
@@ -173,10 +173,10 @@ class TicketInfoModal extends React.Component {
                 </tr>
               </td>
               <td>
-                <tr>
+                <tr className="ticketInfoTitle">
                   <td>2 BYOD tickets</td>
                 </tr>
-                <tr>
+                <tr className="ticketInfoText">
                   <td>
                     If you have a friend that you want to bring along for the
                     weekend, get this ticket for the both of you and save loads
@@ -185,10 +185,10 @@ class TicketInfoModal extends React.Component {
                 </tr>
               </td>
               <td>
-                <tr>
+                <tr className="ticketInfoTitle">
                   <td>3 or more BYOD tickets</td>
                 </tr>
-                <tr>
+                <tr className="ticketInfoText">
                   <td>
                     If you have more than 1 or 2 friends that you want to bring
                     down for the weekend, get this group ticket for your bunch
@@ -197,14 +197,14 @@ class TicketInfoModal extends React.Component {
                 </tr>
               </td>
               <td>
-                <tr>
+                <tr className="ticketInfoTitle">
                   <td>1 Spectator ticket</td>
                 </tr>
-                <tr>
-                  <td>
-                    This is a ticket for if you don't fancy bringing your entire
-                    pc tower but you still want to come down and watch some
-                    movies on the projector or play some board games.
+                <tr className="ticketInfoText">
+                  <td id="bottomRight">
+                    Iif you don't fancy bringing your entire pc tower but you
+                    still want to come down and watch some movies on the
+                    projector or play some board games.
                   </td>
                 </tr>
               </td>
@@ -212,19 +212,54 @@ class TicketInfoModal extends React.Component {
             <tr id="buyTicket">
               <td />
               <td>
-                <button>Buy Regular</button>
+                <Button
+                  onClick={this.props.onHide}
+                  variant="outline-warning"
+                  className="infoButton ticketModalBuyButton"
+                  href="nextEvents"
+                >
+                  Buy Regular
+                </Button>
               </td>
               <td>
-                <button>Buy Student</button>
+                <Button
+                  onClick={this.props.onHide}
+                  variant="outline-warning"
+                  className="infoButton ticketModalBuyButton"
+                  href="nextEvents"
+                >
+                  Buy Student
+                </Button>
               </td>
               <td>
-                <button>Buy Duo</button>
+                <Button
+                  onClick={this.props.onHide}
+                  variant="outline-warning"
+                  className="infoButton ticketModalBuyButton"
+                  href="nextEvents"
+                >
+                  Buy Duo
+                </Button>
               </td>
               <td>
-                <button>Buy Group</button>
+                <Button
+                  onClick={this.props.onHide}
+                  variant="outline-warning"
+                  className="infoButton ticketModalBuyButton"
+                  href="nextEvents"
+                >
+                  Buy Group
+                </Button>
               </td>
               <td>
-                <button>Buy Spectator</button>
+                <Button
+                  onClick={this.props.onHide}
+                  variant="outline-warning"
+                  className="infoButton ticketModalBuyButton"
+                  href="nextEvents"
+                >
+                  Buy Regular
+                </Button>
               </td>
             </tr>
           </table>
@@ -233,8 +268,7 @@ class TicketInfoModal extends React.Component {
           <Button
             onClick={this.props.onHide}
             variant="outline-warning"
-            className="infoButton"
-            style={{ marginLeft: "10px" }}
+            className="infoButton ticketModalBuyButton"
           >
             Close
           </Button>

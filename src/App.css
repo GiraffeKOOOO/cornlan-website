@@ -135,13 +135,61 @@ a:hover {
 /*  -- ticket modal information --  */
 
 #ticketTable td {
-  border: solid 1px black;
   width: 200px;
   text-align: center;
   vertical-align: top;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffa500;
+  border-right: #ffa500 solid 4px;
 }
 
-#ticketTable button {
+#topLeft {
+  border-top-left-radius: 20px;
+}
+
+#topRight {
+  border-top-right-radius: 20px;
+  border-right: none !important;
+}
+
+#ticketPrice {
+  border-bottom: #ffa500 solid 4px;
+}
+
+#ticketInfo tr {
+  background-color: White;
+}
+
+.ticketInfoTitle td {
+  background-color: #ffa500 !important;
+  color: black !important;
+}
+
+.ticketInfoText td {
+  border-right: none !important;
+}
+
+#bottomLeft {
+  border-bottom-left-radius: 20px;
+}
+
+#bottomRight {
+  border-right: none !important;
+  border-bottom-right-radius: 20px;
+}
+#ticketImages td {
+  background-color: white;
+  border-right: black solid 4px;
+}
+
+.ticketModalBuyButton {
   display: block;
   margin: auto;
+  margin-top: 10px;
+}
+
+#buyTicket td {
+  background-color: white;
+  border-right: white;
 }
