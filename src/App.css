@@ -189,7 +189,17 @@ a:hover {
   margin-top: 10px;
 }
 
+.ticketModalBuyButton:hover {
+  color: black;
+}
+
 #buyTicket td {
   background-color: white;
   border-right: white;
+}
+
+#smallChecklistTable {
+  width: 200px;
+  text-align: center;
+  vertical-align: top;
 }

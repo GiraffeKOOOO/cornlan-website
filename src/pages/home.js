@@ -20,6 +20,8 @@ import studentTicketImage from "../images/icons/student.png";
 import duoTicketImage from "../images/icons/duo.png";
 import groupTicketImage from "../images/icons/group.png";
 import spectatorTicketImage from "../images/icons/spectator.png";
+import computerImage from "../images/icons/computer.png";
+import monitorImage from "../images/icons/monitor.png";
 
 const IMAGES = [
   {
@@ -213,7 +215,6 @@ class TicketInfoModal extends React.Component {
               <td />
               <td>
                 <Button
-                  onClick={this.props.onHide}
                   variant="outline-warning"
                   className="infoButton ticketModalBuyButton"
                   href="nextEvents"
@@ -223,7 +224,6 @@ class TicketInfoModal extends React.Component {
               </td>
               <td>
                 <Button
-                  onClick={this.props.onHide}
                   variant="outline-warning"
                   className="infoButton ticketModalBuyButton"
                   href="nextEvents"
@@ -233,7 +233,6 @@ class TicketInfoModal extends React.Component {
               </td>
               <td>
                 <Button
-                  onClick={this.props.onHide}
                   variant="outline-warning"
                   className="infoButton ticketModalBuyButton"
                   href="nextEvents"
@@ -243,7 +242,6 @@ class TicketInfoModal extends React.Component {
               </td>
               <td>
                 <Button
-                  onClick={this.props.onHide}
                   variant="outline-warning"
                   className="infoButton ticketModalBuyButton"
                   href="nextEvents"
@@ -253,7 +251,6 @@ class TicketInfoModal extends React.Component {
               </td>
               <td>
                 <Button
-                  onClick={this.props.onHide}
                   variant="outline-warning"
                   className="infoButton ticketModalBuyButton"
                   href="nextEvents"
@@ -283,22 +280,38 @@ class ChecklistModal extends React.Component {
     return (
       <Modal
         {...this.props}
-        size="lg"
+        size="xl"
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Small Checklist
+            <h3>Small Checklist</h3>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h4>Centered Modal</h4>
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-            dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta
-            ac consectetur ac, vestibulum at eros.
-          </p>
+          <table id="smallChecklistTable">
+            <tr className="imageTitle">
+              <td>computer/xbox/playstation</td>
+              <td>Monitor/TV/Display</td>
+            </tr>
+            <tr className="images">
+              <td>
+                <img
+                  src={computerImage}
+                  alt="computer"
+                  style={{ width: "125px", height: "125px" }}
+                />
+              </td>
+              <td>
+                <img
+                  src={monitorImage}
+                  alt="monitor"
+                  style={{ width: "125px", height: "125px" }}
+                />
+              </td>
+            </tr>
+          </table>
         </Modal.Body>
         <Modal.Footer>
           <Button
