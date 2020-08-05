@@ -1,12 +1,205 @@
-#header{
-  background-image: linear-gradient(to right top, #0056d8, #0073dc, #0086cc, #0093b4, #009d9d);
+/*  [All pages] HEADER  */
+#logo {
+  background-color: none;
+  border: none;
 }
 
-.grid1{
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
+#header {
+  background-color: black;
+  opacity: 0.8;
 }
-.logo{
-  height: 50%;
+
+#header a {
+  color: orange;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f90;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+/*  [Home page] JUMBOTRON + A tags  */
+
+#nextEventJumbo {
+  background-image: url("./images/banner1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.86;
+}
+
+#infoText {
+  background: rgba(0, 0, 0, 0.6);
+  width: 40%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px rgb(255, 165, 0) solid;
+  margin-left: 55%;
+}
+
+#welcomeTitle {
+  color: orange;
+  -webkit-text-stroke: 2px black;
+  font-size: 70px;
+  background-color: rgba(255, 165, 0, 0.5);
+  border-radius: 4px;
+}
+
+.infoText {
+  color: orange;
+  -webkit-text-stroke: 2px black;
+}
+
+#signupButton:hover {
+  color: black !important;
+}
+
+a {
+  all: unset;
+  color: #ffa500 !important;
+  padding: 4px;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid orange;
+
+  -webkit-transition: ease-in 0.1s; /* property duration timing-function delay */
+  -moz-transition: ease-in 0.1s;
+  -o-transition: ease-in 0.1s;
+  transition: ease-in 0.1s;
+}
+
+#nextEventTitle {
+  background-color: rgba(255, 165, 0, 0.5);
+  border-radius: 4px;
+  padding: 2px;
+  margin-left: 8px;
+}
+
+#nextEventTitle:hover {
+  background-color: rgba(255, 165, 0, 1);
+  transition: 0.2s;
+}
+
+/*  [Home page] About */
+
+.infoButton {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#aboutText p {
+  font-size: 20px;
+}
+
+#aboutText li {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.socialIcons {
+  width: 100px;
+  height: 100px;
+  margin: 2%;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+}
+
+.ticketModal {
+  width: 90%;
+}
+
+/*  -- ticket modal information --  */
+
+#ticketTable td {
+  width: 200px;
+  text-align: center;
+  vertical-align: top;
+
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffa500;
+  border-right: #ffa500 solid 4px;
+}
+
+#topLeft {
+  border-top-left-radius: 20px;
+}
+
+#topRight {
+  border-top-right-radius: 20px;
+  border-right: none !important;
+}
+
+#ticketPrice {
+  border-bottom: #ffa500 solid 4px;
+}
+
+#ticketInfo tr {
+  background-color: White;
+}
+
+.ticketInfoTitle td {
+  background-color: #ffa500 !important;
+  color: black !important;
+}
+
+.ticketInfoText td {
+  border-right: none !important;
+}
+
+#bottomLeft {
+  border-bottom-left-radius: 20px;
+}
+
+#bottomRight {
+  border-right: none !important;
+  border-bottom-right-radius: 20px;
+}
+#ticketImages td {
+  background-color: white;
+  border-right: black solid 4px;
+}
+
+.ticketModalBuyButton {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.ticketModalBuyButton:hover {
+  color: black;
+}
+
+#buyTicket td {
+  background-color: white;
+  border-right: white;
+}
+
+#smallChecklistTable {
+  width: 200px;
+  text-align: center;
+  vertical-align: top;
 }
