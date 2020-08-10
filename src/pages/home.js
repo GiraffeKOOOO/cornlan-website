@@ -331,8 +331,10 @@ class ChecklistModal extends React.Component {
 class Home extends Component {
   constructor(...args) {
     super(...args);
-
-    this.state = { TicketInfoModal: false, ChecklistModal: false };
+    this.state = { 
+      TicketInfoModal: false, 
+      ChecklistModal: false 
+    };
   }
   render() {
     let modalClose = () =>
@@ -344,9 +346,17 @@ class Home extends Component {
             <h1 id="welcomeTitle">Welcome to CornLAN</h1>
             <h2 className="infoText">
               Next event is
-              <a href="nextEvents" id="nextEventTitle">
+              {/*
+                <a href="nextEvents" id="nextEventTitle" > 
+                  SickLAN 9 
+                </a>
+              */}
+              <Button 
+              variant="outline-warning"
+              id="nextEventTitle"
+              href="nextEvents">
                 SickLAN 9
-              </a>
+              </Button>
             </h2>
             <h3 className="infoText">
               <img

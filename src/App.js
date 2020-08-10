@@ -66,7 +66,7 @@ function App() {
               <a href="cookies">Cookies</a>
             </FooterLinkList>
           </FooterSection>
-          <FooterSection type="center">
+          <FooterSection type="middle">
             <FooterLinkList>
               <a href="/"> Find us on: </a>
               <a
