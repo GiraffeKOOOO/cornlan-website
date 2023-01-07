@@ -18,7 +18,7 @@
     "react-images": "^1.0.0",
     "react-mdl": "^1.11.0",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^3.4.4",
     "serialize-javascript": "^4.0.0",
     "websocket-extensions": "^0.1.4",
     "yargs-parser": "^18.1.3"
